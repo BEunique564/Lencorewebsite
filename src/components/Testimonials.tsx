@@ -25,22 +25,16 @@ export default function Testimonials() {
   }, [next]);
 
   const variants = {
-    enter: (dir: number) => ({
-      x: dir > 0 ? 100 : -100,
-      opacity: 0,
-    }),
+    enter: (dir: number) => ({ x: dir > 0 ? 100 : -100, opacity: 0 }),
     center: { x: 0, opacity: 1 },
-    exit: (dir: number) => ({
-      x: dir > 0 ? -100 : 100,
-      opacity: 0,
-    }),
+    exit: (dir: number) => ({ x: dir > 0 ? -100 : 100, opacity: 0 }),
   };
 
   const review = reviews[current];
 
   return (
-    <section id="reviews" className="py-24 md:py-32 bg-section-alt">
-      <div className="max-w-7xl mx-auto px-6">
+    <section id="reviews" className="py-24 md:py-32 bg-warm-ivory">
+      <div className="max-w-[1440px] mx-auto px-6 lg:px-12">
         <div className="text-center mb-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -49,7 +43,7 @@ export default function Testimonials() {
             className="flex items-center justify-center gap-3 mb-6"
           >
             <div className="w-8 h-[1px] bg-gold" />
-            <span className="text-gold text-xs font-dm tracking-[0.25em] uppercase">
+            <span className="text-gold text-xs font-dm tracking-[0.25em] uppercase font-medium">
               Reviews
             </span>
             <div className="w-8 h-[1px] bg-gold" />
@@ -60,7 +54,7 @@ export default function Testimonials() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ delay: 0.1 }}
-            className="font-playfair text-4xl md:text-5xl font-bold mb-6"
+            className="font-playfair text-4xl md:text-5xl font-bold mb-5"
           >
             What Our Guests <span className="text-gradient">Say</span>
           </motion.h2>
@@ -89,13 +83,13 @@ export default function Testimonials() {
                   ))}
                 </div>
 
-                <p className="font-cormorant text-xl md:text-2xl text-foreground/80 leading-relaxed mb-8 italic">
+                <p className="font-cormorant text-xl md:text-2xl text-foreground/75 leading-relaxed mb-8 italic">
                   &ldquo;{review.text}&rdquo;
                 </p>
 
                 <div className="flex items-center justify-center gap-4">
                   <div className="w-12 h-12 rounded-full bg-cream-dark flex items-center justify-center">
-                    <span className="font-playfair text-lg text-gold">{review.name[0]}</span>
+                    <span className="font-playfair text-lg text-gold font-semibold">{review.name[0]}</span>
                   </div>
                   <div className="text-left">
                     <p className="font-dm font-medium text-sm">{review.name}</p>
@@ -111,7 +105,7 @@ export default function Testimonials() {
           <div className="flex items-center justify-center gap-4 mt-8">
             <button
               onClick={prev}
-              className="w-10 h-10 rounded-full border border-foreground/10 flex items-center justify-center hover:border-gold hover:text-gold transition-colors"
+              className="w-10 h-10 rounded-full border border-foreground/10 flex items-center justify-center hover:border-gold hover:text-gold transition-colors duration-300"
               aria-label="Previous review"
             >
               <ChevronLeft size={18} />
@@ -121,12 +115,9 @@ export default function Testimonials() {
               {reviews.map((_, i) => (
                 <button
                   key={i}
-                  onClick={() => {
-                    setDirection(i > current ? 1 : -1);
-                    setCurrent(i);
-                  }}
-                  className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                    i === current ? "bg-gold w-6" : "bg-foreground/20"
+                  onClick={() => { setDirection(i > current ? 1 : -1); setCurrent(i); }}
+                  className={`h-2 rounded-full transition-all duration-300 ${
+                    i === current ? "bg-gold w-6" : "bg-foreground/15 w-2"
                   }`}
                   aria-label={`Go to review ${i + 1}`}
                 />
@@ -135,7 +126,7 @@ export default function Testimonials() {
 
             <button
               onClick={next}
-              className="w-10 h-10 rounded-full border border-foreground/10 flex items-center justify-center hover:border-gold hover:text-gold transition-colors"
+              className="w-10 h-10 rounded-full border border-foreground/10 flex items-center justify-center hover:border-gold hover:text-gold transition-colors duration-300"
               aria-label="Next review"
             >
               <ChevronRight size={18} />

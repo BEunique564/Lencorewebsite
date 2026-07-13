@@ -19,12 +19,12 @@ export default function Newsletter() {
 
   return (
     <section className="py-16 md:py-20">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-[1440px] mx-auto px-6 lg:px-12">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
-          className="bg-cream rounded-3xl p-8 md:p-12 text-center"
+          className="bg-cream rounded-3xl p-10 md:p-14 text-center"
         >
           <h3 className="font-playfair text-2xl md:text-3xl font-bold mb-3">
             Stay in the <span className="text-gradient">Loop</span>
@@ -42,11 +42,11 @@ export default function Newsletter() {
               onChange={(e) => setEmail(e.target.value)}
               placeholder="Your email address"
               required
-              className="flex-1 px-5 py-3 rounded-full bg-white border border-cream-dark focus:border-gold focus:outline-none text-sm font-dm"
+              className="flex-1 px-5 py-3.5 rounded-full bg-white border border-cream-dark focus:border-gold focus:outline-none text-sm font-dm"
             />
             <button
               type="submit"
-              className="px-6 py-3 bg-charcoal text-white rounded-full font-dm text-sm flex items-center justify-center gap-2 hover:bg-gold transition-all duration-300"
+              className="btn-luxury btn-luxury-primary"
             >
               {submitted ? (
                 <>

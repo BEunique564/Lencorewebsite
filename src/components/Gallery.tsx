@@ -5,18 +5,18 @@ import { motion, AnimatePresence } from "framer-motion";
 import { X, ZoomIn } from "lucide-react";
 
 const galleryImages = [
-  { id: 1, alt: "L'Encore French Toast", category: "desserts", h: "h-80" },
-  { id: 2, alt: "NY Roll close-up", category: "desserts", h: "h-64" },
-  { id: 3, alt: "L'Encore Interior", category: "ambience", h: "h-96" },
-  { id: 4, alt: "Saffron Kunafa Crepe", category: "desserts", h: "h-72" },
-  { id: 5, alt: "Coffee Art", category: "drinks", h: "h-64" },
-  { id: 6, alt: "L'Encore Ambience", category: "ambience", h: "h-80" },
-  { id: 7, alt: "Pistachio Rose NY Roll", category: "desserts", h: "h-72" },
-  { id: 8, alt: "L'Encore Exterior", category: "ambience", h: "h-96" },
-  { id: 9, alt: "Signature Latte", category: "drinks", h: "h-64" },
-  { id: 10, alt: "Molten Lava Cake", category: "desserts", h: "h-80" },
-  { id: 11, alt: "Butterfly Pea Lemonade", category: "drinks", h: "h-72" },
-  { id: 12, alt: "Table Setup", category: "ambience", h: "h-64" },
+  { id: 1, url: "https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=600&h=500&fit=crop&q=80", alt: "French Toast close-up", category: "desserts", h: "h-80" },
+  { id: 2, url: "https://images.unsplash.com/photo-1530610476181-d83430b64dcd?w=600&h=400&fit=crop&q=80", alt: "NY Roll golden layers", category: "desserts", h: "h-64" },
+  { id: 3, url: "https://images.unsplash.com/photo-1559329007-40df8a9345d8?w=600&h=700&fit=crop&q=80", alt: "L'Encore Interior", category: "ambience", h: "h-96" },
+  { id: 4, url: "https://images.unsplash.com/photo-1519676867240-f03562e64571?w=600&h=500&fit=crop&q=80", alt: "Saffron Kunafa Crêpe", category: "desserts", h: "h-72" },
+  { id: 5, url: "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&h=400&fit=crop&q=80", alt: "Coffee Art", category: "drinks", h: "h-64" },
+  { id: 6, url: "https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=600&h=500&fit=crop&q=80", alt: "L'Encore Ambience", category: "ambience", h: "h-80" },
+  { id: 7, url: "https://images.unsplash.com/photo-1558326567-98ae2405596b?w=600&h=500&fit=crop&q=80", alt: "Pistachio Rose NY Roll", category: "desserts", h: "h-72" },
+  { id: 8, url: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&h=700&fit=crop&q=80", alt: "Table Setup", category: "ambience", h: "h-96" },
+  { id: 9, url: "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600&h=400&fit=crop&q=80", alt: "Signature Latte", category: "drinks", h: "h-64" },
+  { id: 10, url: "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=600&h=500&fit=crop&q=80", alt: "Nutella Lava Cake", category: "desserts", h: "h-80" },
+  { id: 11, url: "https://images.unsplash.com/photo-1621263764928-df1444c5e959?w=600&h=500&fit=crop&q=80", alt: "Butterfly Pea Lemonade", category: "drinks", h: "h-72" },
+  { id: 12, url: "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=600&h=400&fit=crop&q=80", alt: "Biscoff French Toast", category: "desserts", h: "h-64" },
 ];
 
 export default function Gallery() {
@@ -24,7 +24,7 @@ export default function Gallery() {
 
   return (
     <section id="gallery" className="py-24 md:py-32 bg-section-alt">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-[1440px] mx-auto px-6 lg:px-12">
         <div className="text-center mb-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -33,7 +33,7 @@ export default function Gallery() {
             className="flex items-center justify-center gap-3 mb-6"
           >
             <div className="w-8 h-[1px] bg-gold" />
-            <span className="text-gold text-xs font-dm tracking-[0.25em] uppercase">
+            <span className="text-gold text-xs font-dm tracking-[0.25em] uppercase font-medium">
               Gallery
             </span>
             <div className="w-8 h-[1px] bg-gold" />
@@ -44,7 +44,7 @@ export default function Gallery() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ delay: 0.1 }}
-            className="font-playfair text-4xl md:text-5xl font-bold mb-6"
+            className="font-playfair text-4xl md:text-5xl font-bold mb-5"
           >
             A Feast for <span className="text-gradient">the Eyes</span>
           </motion.h2>
@@ -57,12 +57,17 @@ export default function Gallery() {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-30px" }}
-              transition={{ duration: 0.5, delay: i * 0.05 }}
+              transition={{ duration: 0.5, delay: i * 0.04 }}
               className="masonry-item group cursor-pointer relative rounded-2xl overflow-hidden"
               onClick={() => setSelected(img.id)}
             >
-              <div className={`${img.h} bg-cream-dark flex items-center justify-center relative`}>
-                <span className="font-playfair text-4xl text-foreground/5">{img.alt[0]}</span>
+              <div className={`${img.h} relative overflow-hidden`}>
+                <img
+                  src={img.url}
+                  alt={img.alt}
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  loading="lazy"
+                />
                 <div className="absolute inset-0 bg-black/0 group-hover:bg-black/30 transition-all duration-500 flex items-center justify-center">
                   <ZoomIn
                     size={28}
@@ -73,38 +78,34 @@ export default function Gallery() {
             </motion.div>
           ))}
         </div>
-      </div>
 
-      <AnimatePresence>
-        {selected && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            className="fixed inset-0 z-50 bg-black/90 flex items-center justify-center p-6"
-            onClick={() => setSelected(null)}
-          >
-            <button
-              onClick={() => setSelected(null)}
-              className="absolute top-6 right-6 text-white/70 hover:text-white transition-colors"
-              aria-label="Close"
-            >
-              <X size={28} />
-            </button>
+        <AnimatePresence>
+          {selected && (
             <motion.div
-              initial={{ scale: 0.9, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              exit={{ scale: 0.9, opacity: 0 }}
-              className="max-w-4xl w-full aspect-video bg-charcoal-light rounded-2xl flex items-center justify-center"
-              onClick={(e) => e.stopPropagation()}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              className="fixed inset-0 z-[100] bg-black/90 flex items-center justify-center p-6"
+              onClick={() => setSelected(null)}
             >
-              <span className="font-playfair text-6xl text-white/10">
-                {galleryImages.find((g) => g.id === selected)?.alt}
-              </span>
+              <button
+                className="absolute top-6 right-6 text-white/70 hover:text-white transition-colors"
+                onClick={() => setSelected(null)}
+              >
+                <X size={28} />
+              </button>
+              <motion.img
+                initial={{ scale: 0.9, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                exit={{ scale: 0.9, opacity: 0 }}
+                src={galleryImages.find((g) => g.id === selected)?.url}
+                alt={galleryImages.find((g) => g.id === selected)?.alt}
+                className="max-w-full max-h-[85vh] rounded-2xl object-contain"
+              />
             </motion.div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+          )}
+        </AnimatePresence>
+      </div>
     </section>
   );
 }

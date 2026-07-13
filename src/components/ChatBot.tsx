@@ -87,7 +87,7 @@ export default function ChatBot() {
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
         transition={{ delay: 4, type: "spring" }}
-        className="fixed bottom-24 right-6 z-50 w-14 h-14 bg-charcoal rounded-full flex items-center justify-center shadow-lg hover:bg-gold transition-colors"
+        className="fixed bottom-[148px] right-5 z-50 w-12 h-12 bg-charcoal rounded-full flex items-center justify-center shadow-lg hover:bg-gold transition-colors md:bottom-[140px]"
         aria-label="Open chat"
       >
         {isOpen ? (
@@ -103,7 +103,7 @@ export default function ChatBot() {
             initial={{ opacity: 0, y: 20, scale: 0.95 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 20, scale: 0.95 }}
-            className="fixed bottom-40 right-6 z-50 w-80 h-96 bg-white rounded-2xl shadow-2xl flex flex-col overflow-hidden"
+            className="fixed bottom-[220px] right-5 z-50 w-80 h-96 bg-white rounded-2xl shadow-2xl flex flex-col overflow-hidden md:bottom-[212px]"
           >
             <div className="bg-charcoal p-4 flex items-center gap-3">
               <div className="w-8 h-8 rounded-full bg-gold/20 flex items-center justify-center">

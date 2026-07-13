@@ -10,7 +10,7 @@ export default function FloatingReservation() {
       initial={{ y: 100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ delay: 5, duration: 0.6 }}
-      className="fixed bottom-6 left-6 z-40 hidden md:flex"
+      className="fixed bottom-[72px] left-5 z-40 hidden md:flex"
     >
       <button
         onClick={() => scrollToSection("visit")}

@@ -45,7 +45,7 @@ export const menuItems: MenuItem[] = [
       "Our signature thick-cut brioche French Toast, golden and fluffy, served with maple syrup and fresh toppings",
     price: 249,
     category: "French Toast",
-    image: "/images/french-toast-classic.jpg",
+    image: "https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=600&h=400&fit=crop&q=80",
     badge: "Bestseller",
     tags: ["vegetarian", "bestseller"],
   },
@@ -56,7 +56,7 @@ export const menuItems: MenuItem[] = [
       "Thick-cut brioche with Biscoff spread, caramelised banana, and speculoos crumble",
     price: 299,
     category: "French Toast",
-    image: "/images/french-toast-biscoff.jpg",
+    image: "https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=600&h=400&fit=crop&q=80",
     tags: ["vegetarian"],
   },
   {
@@ -66,7 +66,7 @@ export const menuItems: MenuItem[] = [
       "Pillowy brioche filled with hazelnut Nutella, dusted with powdered sugar and gold leaf",
     price: 279,
     category: "French Toast",
-    image: "/images/french-toast-nutella.jpg",
+    image: "https://images.unsplash.com/photo-1488477181946-6428a0291777?w=600&h=400&fit=crop&q=80",
     tags: ["vegetarian"],
   },
   {
@@ -76,7 +76,7 @@ export const menuItems: MenuItem[] = [
       "A generous platter of our golden brioche toast with assorted toppings — perfect for sharing",
     price: 349,
     category: "French Toast",
-    image: "/images/brioche-platter.jpg",
+    image: "https://images.unsplash.com/photo-1509365390695-33aee754301f?w=600&h=400&fit=crop&q=80",
     badge: "Must Try",
     tags: ["bestseller", "sharing"],
   },
@@ -87,7 +87,7 @@ export const menuItems: MenuItem[] = [
       "Our signature NY Supreme Roll filled with creamy Nutella, crispy on the outside, soft on the inside",
     price: 199,
     category: "NY Rolls",
-    image: "/images/ny-roll-nutella.jpg",
+    image: "https://images.unsplash.com/photo-1530610476181-d83430b64dcd?w=600&h=400&fit=crop&q=80",
     badge: "Most Loved",
     tags: ["bestseller"],
   },
@@ -98,7 +98,7 @@ export const menuItems: MenuItem[] = [
       "Crispy croissant-dough hybrid from New York, filled with cream cheese and topped with caramelised sugar",
     price: 179,
     category: "NY Rolls",
-    image: "/images/ny-roll-classic.jpg",
+    image: "https://images.unsplash.com/photo-1555507036-ab1f4038024a?w=600&h=400&fit=crop&q=80",
     tags: ["original"],
   },
   {
@@ -108,7 +108,7 @@ export const menuItems: MenuItem[] = [
       "Delicate roll with pistachio cream, rose water glaze, and edible rose petals",
     price: 229,
     category: "NY Rolls",
-    image: "/images/ny-roll-pistachio.jpg",
+    image: "https://images.unsplash.com/photo-1558326567-98ae2405596b?w=600&h=400&fit=crop&q=80",
     tags: ["premium"],
   },
   {
@@ -118,7 +118,7 @@ export const menuItems: MenuItem[] = [
       "Lotus Biscoff filled NY Roll with speculoos crumble and caramel drizzle",
     price: 219,
     category: "NY Rolls",
-    image: "/images/ny-roll-biscoff.jpg",
+    image: "https://images.unsplash.com/photo-1509365465985-25d11c17e812?w=600&h=400&fit=crop&q=80",
     tags: ["popular"],
   },
   {
@@ -128,7 +128,7 @@ export const menuItems: MenuItem[] = [
       "Paper-thin French crêpe loaded with Nutella and topped with powdered sugar",
     price: 199,
     category: "Crêpes",
-    image: "/images/crepe-nutella.jpg",
+    image: "https://images.unsplash.com/photo-1519676867240-f03562e64571?w=600&h=400&fit=crop&q=80",
     badge: "Popular",
     tags: ["vegetarian"],
   },
@@ -139,7 +139,7 @@ export const menuItems: MenuItem[] = [
       "Delicate crêpe with Chantilly cream, fresh strawberries, and white chocolate drizzle",
     price: 229,
     category: "Crêpes",
-    image: "/images/crepe-strawberry.jpg",
+    image: "https://images.unsplash.com/photo-1626200419199-391ae4be7a41?w=600&h=400&fit=crop&q=80",
     tags: ["vegetarian"],
   },
   {
@@ -149,7 +149,7 @@ export const menuItems: MenuItem[] = [
       "East-meets-West fusion with saffron cream, crispy kunafa threads, and rose syrup",
     price: 249,
     category: "Crêpes",
-    image: "/images/crepe-kunafa.jpg",
+    image: "https://images.unsplash.com/photo-1495147466023-ac5c588e2e94?w=600&h=400&fit=crop&q=80",
     badge: "Chef's Special",
     tags: ["signature", "fusion"],
   },
@@ -160,7 +160,7 @@ export const menuItems: MenuItem[] = [
       "Belgian dark chocolate crêpe with caramelised banana, cocoa nibs, and gold dust",
     price: 239,
     category: "Crêpes",
-    image: "/images/crepe-chocolate.jpg",
+    image: "https://images.unsplash.com/photo-1571115177098-24ec42ed204d?w=600&h=400&fit=crop&q=80",
   },
   {
     id: "ck-001",
@@ -169,7 +169,7 @@ export const menuItems: MenuItem[] = [
       "Dark chocolate cake with a flowing Nutella centre, served with vanilla bean ice cream",
     price: 299,
     category: "Cakes",
-    image: "/images/lava-cake.jpg",
+    image: "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=600&h=400&fit=crop&q=80",
   },
   {
     id: "ck-002",
@@ -178,7 +178,7 @@ export const menuItems: MenuItem[] = [
       "Moist red velvet cake with cream cheese frosting and white chocolate shavings",
     price: 199,
     category: "Cakes",
-    image: "/images/red-velvet.jpg",
+    image: "https://images.unsplash.com/photo-1586788680434-30d324b2d46f?w=600&h=400&fit=crop&q=80",
   },
   {
     id: "ck-003",
@@ -187,7 +187,7 @@ export const menuItems: MenuItem[] = [
       "Classic creamy New York-style cheesecake with berry compote",
     price: 249,
     category: "Cakes",
-    image: "/images/cheesecake.jpg",
+    image: "https://images.unsplash.com/photo-1524351199678-94135b1ef281?w=600&h=400&fit=crop&q=80",
     tags: ["classic"],
   },
   {
@@ -197,7 +197,7 @@ export const menuItems: MenuItem[] = [
       "Double-shot espresso with steamed milk foam and a hint of vanilla",
     price: 149,
     category: "Coffee",
-    image: "/images/signature-latte.jpg",
+    image: "https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&h=400&fit=crop&q=80",
     badge: "House Favourite",
   },
   {
@@ -207,7 +207,7 @@ export const menuItems: MenuItem[] = [
       "Chilled espresso with chocolate, cold milk, and ice — perfect for Ahmedabad evenings",
     price: 179,
     category: "Coffee",
-    image: "/images/iced-mocha.jpg",
+    image: "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=600&h=400&fit=crop&q=80",
   },
   {
     id: "cb-001",
@@ -216,7 +216,7 @@ export const menuItems: MenuItem[] = [
       "Colour-changing butterfly pea flower tea with fresh lemon, honey, and edible flowers",
     price: 169,
     category: "Cold Beverages",
-    image: "/images/butterfly-lemonade.jpg",
+    image: "https://images.unsplash.com/photo-1621263764928-df1444c5e959?w=600&h=400&fit=crop&q=80",
     badge: "Instagrammable",
     tags: ["instagrammable"],
   },
@@ -227,7 +227,7 @@ export const menuItems: MenuItem[] = [
       "Sparkling rose water with lychee purée, elderflower, and a hint of cardamom",
     price: 179,
     category: "Cold Beverages",
-    image: "/images/rose-lychee.jpg",
+    image: "https://images.unsplash.com/photo-1536935338788-846bb9981813?w=600&h=400&fit=crop&q=80",
   },
   {
     id: "cb-003",
@@ -236,7 +236,7 @@ export const menuItems: MenuItem[] = [
       "Smooth espresso over ice — bold, refreshing, and pure",
     price: 129,
     category: "Cold Beverages",
-    image: "/images/iced-americano.jpg",
+    image: "https://images.unsplash.com/photo-1517701604599-bb29b565090c?w=600&h=400&fit=crop&q=80",
   },
 ];
 
@@ -244,7 +244,7 @@ export const reviews: Review[] = [
   {
     id: "r1",
     name: "Priya Sharma",
-    avatar: "/images/avatar-1.jpg",
+    avatar: "",
     rating: 5,
     text: "Absolutely stunning café! The Classic French Toast is hands down the best I've had in Ahmedabad. The ambience is so luxurious, perfect for date nights. Every corner is Instagram-worthy.",
     source: "Google Reviews",
@@ -253,7 +253,7 @@ export const reviews: Review[] = [
   {
     id: "r2",
     name: "Arjun Mehta",
-    avatar: "/images/avatar-2.jpg",
+    avatar: "",
     rating: 5,
     text: "L'Encore has set a new standard for dessert cafés. The Supreme Nutella Roll is divine, and the attention to presentation is remarkable. Worth every penny for the experience.",
     source: "Google Reviews",
@@ -262,7 +262,7 @@ export const reviews: Review[] = [
   {
     id: "r3",
     name: "Foodie Ahmedabad",
-    avatar: "/images/avatar-3.jpg",
+    avatar: "",
     rating: 5,
     text: "As a food blogger, I've visited hundreds of cafés. L'Encore is in a league of its own. The Saffron Kunafa Crêpe is a masterpiece. The aesthetics are unmatched.",
     source: "Instagram",
@@ -271,7 +271,7 @@ export const reviews: Review[] = [
   {
     id: "r4",
     name: "Neha Kapoor",
-    avatar: "/images/avatar-4.jpg",
+    avatar: "",
     rating: 5,
     text: "We celebrated our anniversary here and it was magical. The staff made us feel so special, and the desserts were out of this world. The Brioche Toast Platter is a must-try!",
     source: "Google Reviews",
@@ -280,7 +280,7 @@ export const reviews: Review[] = [
   {
     id: "r5",
     name: "Karan Patel",
-    avatar: "/images/avatar-5.jpg",
+    avatar: "",
     rating: 5,
     text: "Finally, a café in Ahmedabad that matches international standards. The Pistachio Rose NY Roll is an experience. The whole vibe screams luxury. Highly recommended!",
     source: "Zomato",
@@ -289,7 +289,7 @@ export const reviews: Review[] = [
   {
     id: "r6",
     name: "Sneha Desai",
-    avatar: "/images/avatar-6.jpg",
+    avatar: "",
     rating: 5,
     text: "The Butterfly Pea Lemonade is pure art in a glass. L'Encore understands that luxury is in the details. From the cutlery to the plating, everything is premium.",
     source: "Google Reviews",
@@ -377,7 +377,7 @@ Our philosophy is simple yet profound: every dessert should be a masterpiece. We
 Our French Toast has earned a cult following in Ahmedabad. The Classic French Toast, our signature offering, is a revelation. The NY Supreme Rolls — crispy, flaky, and filled with innovative flavours — have become the city's most craved dessert. And our Crêpes? They're a love letter to French patisserie.
 
 Visit L'Encore today and taste the difference that passion and premium ingredients make.`,
-    image: "/images/blog-cafe.jpg",
+    image: "https://images.unsplash.com/photo-1559329007-40df8a9345d8?w=800&h=500&fit=crop&q=80",
     date: "2024-12-15",
     author: "L'Encore Team",
     category: "Café Life",
@@ -423,7 +423,7 @@ A generous platter of our golden brioche toast with assorted toppings — perfec
 It's not just about the recipe — it's about the passion behind every plate. Every French Toast at L'Encore is made to order, ensuring you receive it at the peak of perfection.
 
 Come taste why Ahmedabad calls us the home of the best French Toast.`,
-    image: "/images/blog-french-toast.jpg",
+    image: "https://images.unsplash.com/photo-1484723091739-30a097e8f929?w=800&h=500&fit=crop&q=80",
     date: "2024-12-10",
     author: "L'Encore Team",
     category: "Menu Spotlight",
@@ -463,7 +463,7 @@ Lotus Biscoff filled with speculoos crumble and caramel drizzle. For the Biscoff
 The texture alone is worth the visit. Shatter the crispy exterior and you're met with soft, buttery layers that practically melt on your tongue. It's pastry perfection.
 
 Visit L'Encore and discover why NY Rolls are Ahmedabad's most talked-about dessert.`,
-    image: "/images/blog-ny-roll.jpg",
+    image: "https://images.unsplash.com/photo-1530610476181-d83430b64dcd?w=800&h=500&fit=crop&q=80",
     date: "2024-12-05",
     author: "L'Encore Team",
     category: "Menu Spotlight",
@@ -503,7 +503,7 @@ Belgian dark chocolate, caramelised banana, cocoa nibs, and a dusting of gold. D
 Every crêpe is made to order, ensuring the perfect texture and temperature. We believe crêpes should be experienced, not just eaten.
 
 Visit L'Encore and taste the art of French crêpe-making.`,
-    image: "/images/blog-crepe.jpg",
+    image: "https://images.unsplash.com/photo-1519676867240-f03562e64571?w=800&h=500&fit=crop&q=80",
     date: "2024-11-28",
     author: "L'Encore Team",
     category: "Menu Spotlight",
@@ -543,7 +543,7 @@ Our seating arrangements offer intimate corners and semi-private spaces, perfect
 Reserve your table via WhatsApp at least a day in advance. Let us know if it's a special occasion — we love making celebrations magical.
 
 Book your table now and create memories that last a lifetime.`,
-    image: "/images/blog-date-night.jpg",
+    image: "https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=800&h=500&fit=crop&q=80",
     date: "2024-11-20",
     author: "L'Encore Team",
     category: "Experiences",
@@ -582,7 +582,7 @@ True luxury is feeling cared for. Our team is trained to anticipate your needs, 
 When you visit L'Encore, you're not just having dessert — you're stepping into a world where every detail matters, every bite is a pleasure, and every moment is worth savouring.
 
 Experience luxury. Experience L'Encore.`,
-    image: "/images/blog-luxury.jpg",
+    image: "https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&h=500&fit=crop&q=80",
     date: "2024-11-15",
     author: "L'Encore Team",
     category: "Brand Story",
@@ -607,10 +607,10 @@ export const categories = [
 export const translations = {
   en: {
     hero: {
-      headline: "Experience Ahmedabad's Most Elegant Dessert Destination",
+      headline: "Ahmedabad's Most Elegant Dessert Destination",
       subheading:
         "French Toasts, NY Rolls & Crêpes crafted for unforgettable evenings.",
-      cta1: "Visit Now",
+      cta1: "Reserve Table",
       cta2: "Explore Menu",
       cta3: "Order on WhatsApp",
     },
@@ -633,10 +633,10 @@ export const translations = {
   },
   hi: {
     hero: {
-      headline: "अहमदाबाद का सबसे शानदार मिठाई गंतव्य अनुभव करें",
+      headline: "अहमदाबाद का सबसे शानदार मिठाई गंतव्य",
       subheading:
         "फ्रेंच टोस्ट, एनवाई रोल्स और क्रेप्स — अविस्मरणीय शामों के लिए तैयार।",
-      cta1: "अभी जाएं",
+      cta1: "टेबल रिज़र्व करें",
       cta2: "मेनू देखें",
       cta3: "WhatsApp पर ऑर्डर करें",
     },
@@ -659,10 +659,10 @@ export const translations = {
   },
   gu: {
     hero: {
-      headline: "અમદાવાદનું સૌથી ભવ્ય મીઠાઈ ગંતવ્ય અનુભવો",
+      headline: "અમદાવાદનું સૌથી ભવ્ય મીઠાઈ ગંતવ્ય",
       subheading:
         "ફ્રેન્ચ ટોસ્ટ, એનવાય રોલ્સ અને ક્રેપ્સ — અભિન્ન સાંજો માટે તૈયાર.",
-      cta1: "હમણાં જાઓ",
+      cta1: "ટેબલ રિઝર્વ કરો",
       cta2: "મેનુ જુઓ",
       cta3: "WhatsApp પર ઓર્ડર કરો",
     },

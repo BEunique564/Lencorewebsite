@@ -1,16 +1,13 @@
 "use client";
 
-import { useState } from "react";
 import { motion } from "framer-motion";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, Clock } from "lucide-react";
 import { blogPosts } from "@/lib/data";
 
 export default function BlogPreview() {
-  const [hoveredSlug, setHoveredSlug] = useState<string | null>(null);
-
   return (
     <section id="blog" className="py-24 md:py-32 bg-section-alt">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-[1440px] mx-auto px-6 lg:px-12">
         <div className="text-center mb-16">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -19,7 +16,7 @@ export default function BlogPreview() {
             className="flex items-center justify-center gap-3 mb-6"
           >
             <div className="w-8 h-[1px] bg-gold" />
-            <span className="text-gold text-xs font-dm tracking-[0.25em] uppercase">
+            <span className="text-gold text-xs font-dm tracking-[0.25em] uppercase font-medium">
               Journal
             </span>
             <div className="w-8 h-[1px] bg-gold" />
@@ -36,7 +33,7 @@ export default function BlogPreview() {
           </motion.h2>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-3 gap-7">
           {blogPosts.slice(0, 3).map((post, i) => (
             <motion.article
               key={post.slug}
@@ -44,22 +41,36 @@ export default function BlogPreview() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              onMouseEnter={() => setHoveredSlug(post.slug)}
-              onMouseLeave={() => setHoveredSlug(null)}
-              className="group bg-white rounded-2xl overflow-hidden luxury-shadow hover-gold"
+              className="group bg-white rounded-2xl overflow-hidden luxury-shadow hover-lift cursor-pointer border border-transparent hover:border-gold/20"
             >
-              <div className="h-48 bg-cream-dark relative overflow-hidden">
-                <span className="absolute inset-0 flex items-center justify-center font-playfair text-4xl text-foreground/5">
-                  {post.title[0]}
-                </span>
-                <div className="absolute inset-0 bg-gold/0 group-hover:bg-gold/10 transition-all duration-500" />
-              </div>
-              <div className="p-6">
-                <div className="flex items-center gap-3 mb-3">
-                  <span className="text-xs text-gold font-dm font-medium bg-gold/10 px-2.5 py-1 rounded-full">
+              <div className="relative h-52 overflow-hidden">
+                <img
+                  src={post.image}
+                  alt={post.title}
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
+                <div className="absolute top-3 left-3 z-20">
+                  <span className="bg-gold/90 backdrop-blur-sm text-white text-[11px] font-dm font-medium px-3 py-1.5 rounded-full">
                     {post.category}
                   </span>
-                  <span className="text-xs text-foreground/30 font-dm">
+                </div>
+                <div className="absolute bottom-3 right-3 z-20 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <span className="bg-white/90 backdrop-blur-sm text-charcoal w-9 h-9 rounded-full flex items-center justify-center hover:bg-gold hover:text-white transition-colors">
+                    <ArrowUpRight size={16} />
+                  </span>
+                </div>
+              </div>
+
+              <div className="p-6">
+                <div className="flex items-center gap-3 mb-3">
+                  <span className="text-xs text-foreground/35 font-dm flex items-center gap-1">
+                    <Clock size={12} />
+                    5 min read
+                  </span>
+                  <span className="text-foreground/15">·</span>
+                  <span className="text-xs text-foreground/35 font-dm">
                     {new Date(post.date).toLocaleDateString("en-IN", {
                       day: "numeric",
                       month: "short",
@@ -67,14 +78,14 @@ export default function BlogPreview() {
                     })}
                   </span>
                 </div>
-                <h3 className="font-playfair text-lg font-semibold mb-2 group-hover:text-gold transition-colors">
+                <h3 className="font-playfair text-lg font-semibold mb-2 group-hover:text-gold transition-colors leading-snug">
                   {post.title}
                 </h3>
-                <p className="text-sm text-foreground/50 font-dm line-clamp-2 mb-4">
+                <p className="text-sm text-foreground/45 font-dm line-clamp-2 mb-4 leading-relaxed">
                   {post.excerpt}
                 </p>
-                <span className="inline-flex items-center gap-1 text-xs text-gold font-dm group-hover:gap-2 transition-all">
-                  Read More <ArrowUpRight size={14} />
+                <span className="inline-flex items-center gap-1.5 text-xs text-gold font-dm font-medium group-hover:gap-2.5 transition-all">
+                  Read More <ArrowUpRight size={13} />
                 </span>
               </div>
             </motion.article>

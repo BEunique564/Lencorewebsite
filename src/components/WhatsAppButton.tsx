@@ -13,7 +13,7 @@ export default function WhatsAppButton() {
       initial={{ scale: 0, opacity: 0 }}
       animate={{ scale: 1, opacity: 1 }}
       transition={{ delay: 3, type: "spring", stiffness: 200 }}
-      className="fixed bottom-20 md:bottom-16 right-6 z-50 group"
+      className="fixed bottom-20 right-5 z-50 group md:bottom-[72px]"
       aria-label="Chat on WhatsApp"
     >
       <div className="relative">
