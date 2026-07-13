@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { X, Calendar, Clock, Users, MessageSquare } from "lucide-react";
-import { WHATSAPP_NUMBER } from "@/lib/utils";
+import { whatsappLink } from "@/lib/utils";
 
 interface Props {
   isOpen: boolean;
@@ -24,10 +24,7 @@ export default function ReservationModal({ isOpen, onClose }: Props) {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const text = `🍽️ *Reservation Request*\n\n👤 Name: ${form.name}\n📱 Phone: ${form.phone}\n📅 Date: ${form.date}\n🕐 Time: ${form.time}\n👥 Guests: ${form.guests}\n🎉 Occasion: ${form.occasion || "None"}\n💬 Message: ${form.message || "None"}`;
-    window.open(
-      `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`,
-      "_blank"
-    );
+    window.open(whatsappLink(text), "_blank");
     onClose();
   };
 

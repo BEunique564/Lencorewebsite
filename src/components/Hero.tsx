@@ -1,8 +1,8 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ChevronDown, MapPin, ShoppingBag, MessageCircle } from "lucide-react";
-import { WHATSAPP_LINK, GOOGLE_MAPS_URL, scrollToSection } from "@/lib/utils";
+import { ChevronDown, MapPin, ShoppingBag, MessageCircle, Phone, Star } from "lucide-react";
+import { WHATSAPP_PRESETS, GOOGLE_MAPS_URL, scrollToSection, PHONE_NUMBER } from "@/lib/utils";
 
 export default function Hero() {
   return (
@@ -34,24 +34,32 @@ export default function Hero() {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.4 }}
-            className="font-playfair text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-[1.05] tracking-tight mb-8"
+            className="font-playfair text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-[1.05] tracking-tight mb-6"
           >
-            Experience
+            Ahmedabad&apos;s Most
             <br />
-            <span className="text-gradient">Ahmedabad&apos;s</span>
+            <span className="text-gradient">Elegant</span> Dessert
             <br />
-            Most Elegant
-            <br />
-            Dessert Destination
+            Destination
           </motion.h1>
 
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.7 }}
-            className="font-cormorant text-xl md:text-2xl text-foreground/60 max-w-xl mb-12 leading-relaxed"
+            transition={{ duration: 0.8, delay: 0.6 }}
+            className="font-cormorant text-xl md:text-2xl text-foreground/60 max-w-xl mb-4 leading-relaxed"
           >
             French Toasts, NY Rolls & Crepes crafted for unforgettable evenings.
+          </motion.p>
+
+          <motion.p
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.7 }}
+            className="flex items-center gap-2 text-sm text-foreground/50 font-dm mb-10"
+          >
+            <Star size={14} className="text-gold fill-gold" />
+            <span>4.9 on Google • 287+ Happy Customers • Open Daily 5–11 PM</span>
           </motion.p>
 
           <motion.div
@@ -82,13 +90,21 @@ export default function Hero() {
             </button>
 
             <a
-              href={WHATSAPP_LINK}
+              href={WHATSAPP_PRESETS.order}
               target="_blank"
               rel="noopener noreferrer"
               className="group flex items-center gap-3 bg-[#25D366] text-white px-8 py-4 rounded-full font-dm text-sm tracking-wide hover:bg-[#20BD5C] transition-all duration-500 hover:scale-[1.02]"
             >
               <MessageCircle size={18} />
               Order on WhatsApp
+            </a>
+
+            <a
+              href={`tel:+919876543210`}
+              className="group flex items-center gap-3 border border-foreground/10 text-foreground/60 px-6 py-4 rounded-full font-dm text-sm tracking-wide hover:border-gold hover:text-gold transition-all duration-500"
+            >
+              <Phone size={18} />
+              Call
             </a>
           </motion.div>
 
@@ -106,12 +122,16 @@ export default function Hero() {
               <span>★</span>
               <span>4.9 Rating • 287 Reviews</span>
             </div>
+            <div className="hidden md:flex items-center gap-2">
+              <span>📍</span>
+              <span>Sindhu Bhavan Road</span>
+            </div>
           </motion.div>
         </div>
       </div>
 
       <motion.button
-        onClick={() => scrollToSection("about")}
+        onClick={() => scrollToSection("trust")}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 2 }}

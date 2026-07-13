@@ -15,15 +15,22 @@ const botResponses: Record<string, string> = {
   hello: "Welcome to L'Encore! How can I help you today?",
   hi: "Hello! Welcome to L'Encore. What would you like to know?",
   menu: "Our menu features French Toasts (₹295-₹395), NY Rolls (₹295-₹365), Crepes (₹325-₹375), Signature Specials, Coffee, and Cold Beverages. Would you like to know about any specific category?",
+  "view menu": "Our menu features French Toasts (₹295-₹395), NY Rolls (₹295-₹365), Crepes (₹325-₹375), Signature Specials, Coffee, and Cold Beverages.",
   hours: "We're open daily from 5:00 PM to 11:00 PM. We recommend visiting during golden hour for the best experience!",
+  "opening hours": "We're open daily from 5:00 PM to 11:00 PM. Extended hours on weekends!",
   location: "We're located at Ornet Park 3, Sindhu Bhavan Road, Ahmedabad. Easy parking available!",
   reservation: "You can reserve a table via WhatsApp or our online reservation form. For special occasions, book 24 hours in advance.",
+  "reserve table": "You can reserve a table via WhatsApp or our online reservation form. For special occasions, book 24 hours in advance.",
   price: "Our prices range from ₹225 to ₹395. French Toasts start at ₹345, NY Rolls at ₹295, and Crepes at ₹325.",
   bestseller: "Our bestsellers are the Classic Brioche French Toast, Original NY Roll, and our signature Saffron Kunafa Crepe!",
+  bestsellers: "Our bestsellers are the Classic Brioche French Toast, Original NY Roll, and our signature Saffron Kunafa Crepe!",
   parking: "Yes! There's ample parking at Ornet Park 3. Valet service is available during peak hours.",
   delivery: "You can order via WhatsApp for pickup, or check Swiggy/Zomato for delivery. We recommend enjoying our desserts fresh at the café!",
   event: "We host birthday parties, anniversaries, and intimate gatherings. Contact us on WhatsApp for event bookings!",
   special: "For birthdays and anniversaries, let us know when you book — we love making celebrations magical!",
+  birthday: "Happy Birthday! 🎂 We'd love to make your celebration special. We offer custom birthday setups and desserts. Shall I connect you on WhatsApp?",
+  anniversary: "How romantic! 🌹 We specialize in anniversary experiences. Private corners, custom desserts, and a magical atmosphere. Book via WhatsApp!",
+  gift: "Gift cards are available! Contact us on WhatsApp to purchase a L'Encore gift card for someone special.",
 };
 
 function getResponse(input: string): string {
@@ -132,6 +139,26 @@ export default function ChatBot() {
                   </div>
                 </div>
               ))}
+              {messages.length === 1 && (
+                <div className="flex flex-wrap gap-2 pt-2">
+                  {["View Menu", "Opening Hours", "Reserve Table", "Bestsellers", "Location"].map((q) => (
+                    <button
+                      key={q}
+                      onClick={() => {
+                        const userMsg: Message = { id: Date.now().toString(), text: q, isBot: false, timestamp: new Date() };
+                        setMessages((prev) => [...prev, userMsg]);
+                        setTimeout(() => {
+                          const botMsg: Message = { id: (Date.now() + 1).toString(), text: getResponse(q), isBot: true, timestamp: new Date() };
+                          setMessages((prev) => [...prev, botMsg]);
+                        }, 600);
+                      }}
+                      className="px-3 py-1.5 bg-cream rounded-full text-xs font-dm text-foreground/70 hover:bg-gold/10 hover:text-gold transition-colors"
+                    >
+                      {q}
+                    </button>
+                  ))}
+                </div>
+              )}
               <div ref={messagesEndRef} />
             </div>
 

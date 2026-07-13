@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { Calendar, Clock, Users, MessageSquare, Send, Check } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import { WHATSAPP_NUMBER, GOOGLE_MAPS_URL } from "@/lib/utils";
+import { whatsappLink, GOOGLE_MAPS_URL } from "@/lib/utils";
 
 export default function ReservationPage() {
   const [form, setForm] = useState({
@@ -23,7 +23,7 @@ export default function ReservationPage() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const text = `🍽️ *Table Reservation*\n\n👤 Name: ${form.name}\n📱 Phone: ${form.phone}\n📧 Email: ${form.email || "N/A"}\n📅 Date: ${form.date}\n🕐 Time: ${form.time}\n👥 Guests: ${form.guests}\n🎉 Occasion: ${form.occasion || "None"}\n💬 Message: ${form.message || "None"}`;
-    window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`, "_blank");
+    window.open(whatsappLink(text), "_blank");
     setSubmitted(true);
   };
 
