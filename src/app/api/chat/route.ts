@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 const botResponses: Record<string, string> = {
   hello: "Welcome to L'Encore! How can I help you today?",
   menu: "Our menu features French Toasts (₹295-₹395), NY Rolls (₹295-₹365), Crepes (₹325-₹375), Signature Specials, Coffee, and Cold Beverages.",
-  hours: "We're open daily from 5:00 PM to 11:00 PM.",
+  hours: "We're open daily from 6:00 PM to 12:30 AM.",
   location: "We're at Ornet Park 3, Sindhu Bhavan Road, Ahmedabad.",
   reservation: "Reserve via WhatsApp or our online form. For special occasions, book 24 hours in advance.",
   bestseller: "Our bestsellers: Classic Brioche French Toast, Original NY Roll, and Saffron Kunafa Crepe!",

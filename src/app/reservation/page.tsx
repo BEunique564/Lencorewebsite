@@ -96,7 +96,7 @@ export default function ReservationPage() {
                 <label className="text-xs font-dm text-foreground/50 mb-1.5 block flex items-center gap-1"><Clock size={12} /> Time *</label>
                 <select required value={form.time} onChange={(e) => setForm({ ...form, time: e.target.value })} className="w-full px-4 py-3 rounded-xl border border-cream-dark focus:border-gold focus:outline-none text-sm font-dm">
                   <option value="">Select</option>
-                  {["5:00 PM", "5:30 PM", "6:00 PM", "6:30 PM", "7:00 PM", "7:30 PM", "8:00 PM", "8:30 PM", "9:00 PM", "9:30 PM", "10:00 PM"].map((t) => (
+                  {["6:00 PM", "6:30 PM", "7:00 PM", "7:30 PM", "8:00 PM", "8:30 PM", "9:00 PM", "9:30 PM", "10:00 PM", "10:30 PM", "11:00 PM", "11:30 PM", "12:00 AM"].map((t) => (
                     <option key={t}>{t}</option>
                   ))}
                 </select>

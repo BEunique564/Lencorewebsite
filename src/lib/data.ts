@@ -40,11 +40,11 @@ export interface BlogPost {
 export const menuItems: MenuItem[] = [
   {
     id: "ft-001",
-    name: "Classic Brioche French Toast",
+    name: "Classic French Toast",
     description:
-      "Golden brioche soaked in Madagascar vanilla custard, topped with fresh berries and maple syrup",
-    price: 345,
-    category: "French Toasts",
+      "Our signature thick-cut brioche French Toast, golden and fluffy, served with maple syrup and fresh toppings",
+    price: 249,
+    category: "French Toast",
     image: "/images/french-toast-classic.jpg",
     badge: "Bestseller",
     tags: ["vegetarian", "bestseller"],
@@ -54,8 +54,8 @@ export const menuItems: MenuItem[] = [
     name: "Biscoff Caramel French Toast",
     description:
       "Thick-cut brioche with Biscoff spread, caramelised banana, and speculoos crumble",
-    price: 395,
-    category: "French Toasts",
+    price: 299,
+    category: "French Toast",
     image: "/images/french-toast-biscoff.jpg",
     tags: ["vegetarian"],
   },
@@ -64,118 +64,160 @@ export const menuItems: MenuItem[] = [
     name: "Nutella Stuffed French Toast",
     description:
       "Pillowy brioche filled with hazelnut Nutella, dusted with powdered sugar and gold leaf",
-    price: 375,
-    category: "French Toasts",
+    price: 279,
+    category: "French Toast",
     image: "/images/french-toast-nutella.jpg",
     tags: ["vegetarian"],
   },
   {
-    id: "ny-001",
-    name: "Original NY Roll",
+    id: "ft-004",
+    name: "Brioche Toast Platter",
     description:
-      "Crispy croissant-dough hybrid from New York, filled with cream cheese and topped with caramelised sugar",
-    price: 295,
+      "A generous platter of our golden brioche toast with assorted toppings — perfect for sharing",
+    price: 349,
+    category: "French Toast",
+    image: "/images/brioche-platter.jpg",
+    badge: "Must Try",
+    tags: ["bestseller", "sharing"],
+  },
+  {
+    id: "ny-001",
+    name: "Supreme Nutella Roll",
+    description:
+      "Our signature NY Supreme Roll filled with creamy Nutella, crispy on the outside, soft on the inside",
+    price: 199,
     category: "NY Rolls",
-    image: "/images/ny-roll-original.jpg",
+    image: "/images/ny-roll-nutella.jpg",
     badge: "Most Loved",
     tags: ["bestseller"],
   },
   {
     id: "ny-002",
-    name: "Matcha NY Roll",
+    name: "Classic NY Roll",
     description:
-      "Our signature roll infused with ceremonial-grade matcha, white chocolate, and kinako powder",
-    price: 345,
+      "Crispy croissant-dough hybrid from New York, filled with cream cheese and topped with caramelised sugar",
+    price: 179,
     category: "NY Rolls",
-    image: "/images/ny-roll-matcha.jpg",
-    tags: ["new"],
+    image: "/images/ny-roll-classic.jpg",
+    tags: ["original"],
   },
   {
     id: "ny-003",
     name: "Pistachio Rose NY Roll",
     description:
-      "Delicate roll with Bronte pistachio cream, rose water glaze, and edible rose petals",
-    price: 365,
+      "Delicate roll with pistachio cream, rose water glaze, and edible rose petals",
+    price: 229,
     category: "NY Rolls",
     image: "/images/ny-roll-pistachio.jpg",
     tags: ["premium"],
   },
   {
-    id: "cr-001",
-    name: "Strawberry Cream Crepe",
+    id: "ny-004",
+    name: "Biscoff NY Roll",
     description:
-      "Paper-thin French crepe with Chantilly cream, fresh strawberries, and white chocolate drizzle",
-    price: 325,
-    category: "Crepes",
-    image: "/images/crepe-strawberry.jpg",
+      "Lotus Biscoff filled NY Roll with speculoos crumble and caramel drizzle",
+    price: 219,
+    category: "NY Rolls",
+    image: "/images/ny-roll-biscoff.jpg",
+    tags: ["popular"],
+  },
+  {
+    id: "cr-001",
+    name: "Nutella Crêpe",
+    description:
+      "Paper-thin French crêpe loaded with Nutella and topped with powdered sugar",
+    price: 199,
+    category: "Crêpes",
+    image: "/images/crepe-nutella.jpg",
+    badge: "Popular",
     tags: ["vegetarian"],
   },
   {
     id: "cr-002",
-    name: "Dark Chocolate Banana Crepe",
+    name: "Strawberry Cream Crêpe",
     description:
-      "Belgian dark chocolate crepe with caramelised banana, cocoa nibs, and gold dust",
-    price: 355,
-    category: "Crepes",
-    image: "/images/crepe-chocolate.jpg",
+      "Delicate crêpe with Chantilly cream, fresh strawberries, and white chocolate drizzle",
+    price: 229,
+    category: "Crêpes",
+    image: "/images/crepe-strawberry.jpg",
+    tags: ["vegetarian"],
   },
   {
     id: "cr-003",
-    name: "Saffron Kunafa Crepe",
+    name: "Saffron Kunafa Crêpe",
     description:
       "East-meets-West fusion with saffron cream, crispy kunafa threads, and rose syrup",
-    price: 375,
-    category: "Crepes",
+    price: 249,
+    category: "Crêpes",
     image: "/images/crepe-kunafa.jpg",
     badge: "Chef's Special",
     tags: ["signature", "fusion"],
   },
   {
-    id: "sg-001",
-    name: "Crème Brûlée",
+    id: "cr-004",
+    name: "Dark Chocolate Banana Crêpe",
     description:
-      "Classic French custard with a perfectly caramelised sugar crust, infused with Tahitian vanilla",
-    price: 295,
-    category: "Signature Specials",
-    image: "/images/creme-brulee.jpg",
-    tags: ["classic"],
+      "Belgian dark chocolate crêpe with caramelised banana, cocoa nibs, and gold dust",
+    price: 239,
+    category: "Crêpes",
+    image: "/images/crepe-chocolate.jpg",
   },
   {
-    id: "sg-002",
-    name: "Molten Lava Cake",
+    id: "ck-001",
+    name: "Nutella Lava Cake",
     description:
-      "Dark Valrhona chocolate cake with a flowing molten centre, served with vanilla bean ice cream",
-    price: 345,
-    category: "Signature Specials",
+      "Dark chocolate cake with a flowing Nutella centre, served with vanilla bean ice cream",
+    price: 299,
+    category: "Cakes",
     image: "/images/lava-cake.jpg",
   },
   {
-    id: "cf-001",
-    name: "L'Encore Signature Latte",
+    id: "ck-002",
+    name: "Red Velvet Slice",
     description:
-      "Double-shot espresso with oat milk foam, vanilla bean, and a whisper of gold",
-    price: 245,
+      "Moist red velvet cake with cream cheese frosting and white chocolate shavings",
+    price: 199,
+    category: "Cakes",
+    image: "/images/red-velvet.jpg",
+  },
+  {
+    id: "ck-003",
+    name: "New York Cheesecake",
+    description:
+      "Classic creamy New York-style cheesecake with berry compote",
+    price: 249,
+    category: "Cakes",
+    image: "/images/cheesecake.jpg",
+    tags: ["classic"],
+  },
+  {
+    id: "cf-001",
+    name: "Signature Latte",
+    description:
+      "Double-shot espresso with steamed milk foam and a hint of vanilla",
+    price: 149,
     category: "Coffee",
     image: "/images/signature-latte.jpg",
     badge: "House Favourite",
   },
   {
     id: "cf-002",
-    name: "Hazelnut Cortado",
+    name: "Iced Mocha",
     description:
-      "Smooth ristretto with hazelnut-infused steamed milk, served in a ceramic cup",
-    price: 225,
+      "Chilled espresso with chocolate, cold milk, and ice — perfect for Ahmedabad evenings",
+    price: 179,
     category: "Coffee",
-    image: "/images/hazelnut-cortado.jpg",
+    image: "/images/iced-mocha.jpg",
   },
   {
     id: "cb-001",
     name: "Butterfly Pea Lemonade",
     description:
       "Colour-changing butterfly pea flower tea with fresh lemon, honey, and edible flowers",
-    price: 275,
+    price: 169,
     category: "Cold Beverages",
     image: "/images/butterfly-lemonade.jpg",
+    badge: "Instagrammable",
     tags: ["instagrammable"],
   },
   {
@@ -183,20 +225,18 @@ export const menuItems: MenuItem[] = [
     name: "Rose & Lychee Spritz",
     description:
       "Sparkling rose water with lychee purée, elderflower, and a hint of cardamom",
-    price: 295,
+    price: 179,
     category: "Cold Beverages",
     image: "/images/rose-lychee.jpg",
   },
   {
-    id: "ss-001",
-    name: "Saffron Panna Cotta",
+    id: "cb-003",
+    name: "Iced Americano",
     description:
-      "Silken saffron-infused panna cotta with pistachio crumble and rose petal compote",
-    price: 325,
-    category: "Seasonal Specials",
-    image: "/images/panna-cotta.jpg",
-    badge: "Limited Edition",
-    tags: ["seasonal", "limited"],
+      "Smooth espresso over ice — bold, refreshing, and pure",
+    price: 129,
+    category: "Cold Beverages",
+    image: "/images/iced-americano.jpg",
   },
 ];
 
@@ -206,7 +246,7 @@ export const reviews: Review[] = [
     name: "Priya Sharma",
     avatar: "/images/avatar-1.jpg",
     rating: 5,
-    text: "Absolutely stunning café! The French Toast is hands down the best I've had in Ahmedabad. The ambience is so luxurious, perfect for date nights. Every corner is Instagram-worthy.",
+    text: "Absolutely stunning café! The Classic French Toast is hands down the best I've had in Ahmedabad. The ambience is so luxurious, perfect for date nights. Every corner is Instagram-worthy.",
     source: "Google Reviews",
     date: "2 weeks ago",
   },
@@ -215,7 +255,7 @@ export const reviews: Review[] = [
     name: "Arjun Mehta",
     avatar: "/images/avatar-2.jpg",
     rating: 5,
-    text: "L'Encore has set a new standard for dessert cafés. The NY Rolls are divine, and the attention to presentation is remarkable. Worth every penny for the experience.",
+    text: "L'Encore has set a new standard for dessert cafés. The Supreme Nutella Roll is divine, and the attention to presentation is remarkable. Worth every penny for the experience.",
     source: "Google Reviews",
     date: "1 month ago",
   },
@@ -224,7 +264,7 @@ export const reviews: Review[] = [
     name: "Foodie Ahmedabad",
     avatar: "/images/avatar-3.jpg",
     rating: 5,
-    text: "As a food blogger, I've visited hundreds of cafés. L'Encore is in a league of its own. The Saffron Kunafa Crepe is a masterpiece. The aesthetics are unmatched.",
+    text: "As a food blogger, I've visited hundreds of cafés. L'Encore is in a league of its own. The Saffron Kunafa Crêpe is a masterpiece. The aesthetics are unmatched.",
     source: "Instagram",
     date: "3 weeks ago",
   },
@@ -233,7 +273,7 @@ export const reviews: Review[] = [
     name: "Neha Kapoor",
     avatar: "/images/avatar-4.jpg",
     rating: 5,
-    text: "We celebrated our anniversary here and it was magical. The staff made us feel so special, and the desserts were out of this world. The Molten Lava Cake is a must-try!",
+    text: "We celebrated our anniversary here and it was magical. The staff made us feel so special, and the desserts were out of this world. The Brioche Toast Platter is a must-try!",
     source: "Google Reviews",
     date: "1 week ago",
   },
@@ -262,7 +302,7 @@ export const faqs: FAQ[] = [
     id: "faq1",
     question: "What are L'Encore's opening hours?",
     answer:
-      "We're open daily in the evenings from 5:00 PM to 11:00 PM. We recommend visiting during golden hour for the most magical experience.",
+      "We're open daily from 6:00 PM to 12:30 AM. We're Ahmedabad's favourite late-night dessert spot!",
   },
   {
     id: "faq2",
@@ -274,7 +314,7 @@ export const faqs: FAQ[] = [
     id: "faq3",
     question: "Is parking available?",
     answer:
-      "Yes, there is ample parking available at Ornet Park 3. We also have valet service available during peak hours for your convenience.",
+      "Yes, there is ample parking available at Ornet Park. We're located near Crush Coffee and Taj Hotel on Sindhu Bhavan Marg.",
   },
   {
     id: "faq4",
@@ -298,7 +338,7 @@ export const faqs: FAQ[] = [
     id: "faq7",
     question: "What makes L'Encore different from other cafés?",
     answer:
-      "L'Encore isn't just a café — it's an experience. We combine European dessert craftsmanship with premium ingredients, luxury aesthetics, and warm hospitality to create unforgettable moments.",
+      "L'Encore isn't just a café — it's an experience. We're Ahmedabad's first kiosk serving Crêpes, NY Supreme Rolls, and French Toast. We combine European dessert craftsmanship with premium ingredients, luxury aesthetics, and warm hospitality to create unforgettable moments.",
   },
   {
     id: "faq8",
@@ -324,7 +364,7 @@ Our philosophy is simple yet profound: every dessert should be a masterpiece. We
 
 ## What Sets Us Apart
 
-**Premium Ingredients:** From Madagascar vanilla to Bronte pistachios, we source only the best. No artificial flavours, no shortcuts.
+**Premium Ingredients:** We source only the best. No artificial flavours, no shortcuts.
 
 **European Craftsmanship:** Our recipes draw inspiration from the finest patisseries in Paris, Milan, and New York, reimagined for the Indian palate.
 
@@ -334,7 +374,7 @@ Our philosophy is simple yet profound: every dessert should be a masterpiece. We
 
 ## The Signature Collection
 
-Our French Toasts have earned a cult following in Ahmedabad. The Classic Brioche French Toast, soaked in Madagascar vanilla custard and topped with fresh berries, is a revelation. The NY Rolls — crispy, flaky, and filled with innovative flavours — have become the city's most craved dessert. And our Crepes? They're a love letter to French patisserie.
+Our French Toast has earned a cult following in Ahmedabad. The Classic French Toast, our signature offering, is a revelation. The NY Supreme Rolls — crispy, flaky, and filled with innovative flavours — have become the city's most craved dessert. And our Crêpes? They're a love letter to French patisserie.
 
 Visit L'Encore today and taste the difference that passion and premium ingredients make.`,
     image: "/images/blog-cafe.jpg",
@@ -351,7 +391,7 @@ Visit L'Encore today and taste the difference that passion and premium ingredien
     slug: "best-french-toast-ahmedabad",
     title: "The Ultimate Guide to French Toasts in Ahmedabad",
     excerpt:
-      "From classic brioche to innovative fusion flavours, here's why L'Encore serves the best French Toast in Ahmedabad — and why food lovers can't stop talking about it.",
+      "From classic brioche to innovative flavours, here's why L'Encore serves the best French Toast in Ahmedabad — and why food lovers can't stop talking about it.",
     content: `French Toast is more than a breakfast staple — it's a canvas for culinary artistry. And at L'Encore, we've elevated this beloved classic to an art form.
 
 ## The Art of Perfect French Toast
@@ -360,20 +400,23 @@ The secret to extraordinary French Toast lies in three elements: the bread, the 
 
 **The Bread:** We use thick-cut brioche, baked fresh daily. The high butter content creates that signature golden crust while keeping the interior impossibly fluffy.
 
-**The Custard:** Our custard is a carefully guarded recipe — a blend of Madagascar vanilla, organic eggs, and cream, soaked slowly for maximum flavour.
+**The Custard:** Our custard is a carefully guarded recipe, soaked slowly for maximum flavour.
 
 **The Toppings:** Each French Toast variation is a carefully composed symphony of flavours and textures.
 
 ## Our Signature French Toasts
 
-### Classic Brioche French Toast (₹345)
-The one that started it all. Golden brioche, vanilla custard, fresh berries, and real maple syrup. Simple, yet transcendent.
+### Classic French Toast (₹249)
+The one that started it all. Golden brioche, vanilla custard, fresh toppings, and real maple syrup. Simple, yet transcendent.
 
-### Biscoff Caramel French Toast (₹395)
+### Biscoff Caramel French Toast (₹299)
 For those who love a little indulgence. Biscoff spread, caramelised banana, and speculoos crumble create a flavour explosion.
 
-### Nutella Stuffed French Toast (₹375)
+### Nutella Stuffed French Toast (₹279)
 Hazelnut Nutella, powdered sugar, and a touch of gold leaf. Because you deserve luxury.
+
+### Brioche Toast Platter (₹349)
+A generous platter of our golden brioche toast with assorted toppings — perfect for sharing with friends.
 
 ## Why L'Encore's French Toast is the Best in Ahmedabad
 
@@ -403,14 +446,17 @@ Born in the streets of New York, the NY Roll is a revolutionary pastry that comb
 
 ## The L'Encore NY Roll Experience
 
-### Original NY Roll (₹295)
+### Supreme Nutella Roll (₹199)
+The one everyone's talking about. Creamy Nutella filling, crispy exterior, and that signature NY Roll crunch. Our most ordered item.
+
+### Classic NY Roll (₹179)
 The purist's choice. Cream cheese filling, caramelised sugar crust, and that signature flake. Simple perfection.
 
-### Matcha NY Roll (₹345)
-For the adventurous. Ceremonial-grade matcha meets white chocolate in a harmony of East and West.
+### Pistachio Rose NY Roll (₹229)
+Our most premium creation. Pistachio cream, rose water glaze, and edible petals. A true luxury.
 
-### Pistachio Rose NY Roll (₹365)
-Our most premium creation. Bronte pistachio cream, rose water glaze, and edible petals. A true luxury.
+### Biscoff NY Roll (₹219)
+Lotus Biscoff filled with speculoos crumble and caramel drizzle. For the Biscoff lover in you.
 
 ## Why Everyone is Talking About NY Rolls
 
@@ -424,36 +470,39 @@ Visit L'Encore and discover why NY Rolls are Ahmedabad's most talked-about desse
     keywords: [
       "ny rolls ahmedabad",
       "ny rolls sindhu bhavan",
-      "croissant doughnut ahmedabad",
+      "supreme nutella roll ahmedabad",
     ],
   },
   {
     slug: "best-crepes-ahmedabad",
-    title: "Crepes Reimagined: L'Encore's French-Inspired Crepe Collection",
+    title: "Crêpes Reimagined: L'Encore's French-Inspired Crêpe Collection",
     excerpt:
-      "From classic strawberries and cream to our signature Saffron Kunafa Crepe — explore the art of French crepe-making at L'Encore.",
-    content: `The crepe is France's gift to the world — delicate, versatile, and endlessly elegant. At L'Encore, we honour this tradition while pushing the boundaries of flavour.
+      "From classic Nutella to our signature Saffron Kunafa Crêpe — explore the art of French crêpe-making at L'Encore.",
+    content: `The crêpe is France's gift to the world — delicate, versatile, and endlessly elegant. At L'Encore, we honour this tradition while pushing the boundaries of flavour.
 
-## The L'Encore Crepe Philosophy
+## The L'Encore Crêpe Philosophy
 
-A perfect crepe should be paper-thin, with lacy golden edges and a tender centre. Our chefs train for months to achieve this level of precision.
+A perfect crêpe should be paper-thin, with lacy golden edges and a tender centre. Our chefs train for months to achieve this level of precision.
 
-## Our Signature Crepes
+## Our Signature Crêpes
 
-### Strawberry Cream Crepe (₹325)
+### Nutella Crêpe (₹199)
+The classic, perfected. Generous Nutella, powdered sugar, and that delicate crêpe texture.
+
+### Strawberry Cream Crêpe (₹229)
 Chantilly cream, fresh strawberries, and white chocolate — a timeless combination executed to perfection.
 
-### Dark Chocolate Banana Crepe (₹355)
-Belgian dark chocolate, caramelised banana, cocoa nibs, and a dusting of gold. Decadence defined.
-
-### Saffron Kunafa Crepe (₹375)
+### Saffron Kunafa Crêpe (₹249)
 Our signature East-meets-West creation. Saffron cream, crispy kunafa threads, and rose syrup. A fusion masterpiece that has earned its place as Ahmedabad's most Instagrammed dessert.
+
+### Dark Chocolate Banana Crêpe (₹239)
+Belgian dark chocolate, caramelised banana, cocoa nibs, and a dusting of gold. Decadence defined.
 
 ## The L'Encore Difference
 
-Every crepe is made to order on our custom copper griddles, ensuring the perfect texture and temperature. We believe crepes should be experienced, not just eaten.
+Every crêpe is made to order, ensuring the perfect texture and temperature. We believe crêpes should be experienced, not just eaten.
 
-Visit L'Encore and taste the art of French crepe-making.`,
+Visit L'Encore and taste the art of French crêpe-making.`,
     image: "/images/blog-crepe.jpg",
     date: "2024-11-28",
     author: "L'Encore Team",
@@ -477,7 +526,7 @@ Visit L'Encore and taste the art of French crepe-making.`,
 Soft lighting, warm tones, and carefully curated music create an intimate atmosphere that sets the stage for connection. Every detail, from the table settings to the ambient lighting, has been designed with romance in mind.
 
 ### The Experience
-Imagine sharing a Molten Lava Cake, watching the chocolate flow as you break through the surface. Or savouring a Saffron Kunafa Crepe while conversation flows effortlessly. These are the moments L'Encore creates.
+Imagine sharing a Nutella Lava Cake, watching the chocolate flow as you break through the surface. Or savouring a Saffron Kunafa Crêpe while conversation flows effortlessly. These are the moments L'Encore creates.
 
 ### The Privacy
 Our seating arrangements offer intimate corners and semi-private spaces, perfect for couples who want to enjoy each other's company without distraction.
@@ -485,9 +534,9 @@ Our seating arrangements offer intimate corners and semi-private spaces, perfect
 ## Our Date Night Recommendations
 
 1. **Start with our Signature Latte** — the perfect conversation starter
-2. **Share an Original NY Roll** — because dessert is better when shared
-3. **Indulge in the Molten Lava Cake** — it's theatre and dessert in one
-4. **End with our Saffron Panna Cotta** — because every great evening deserves a beautiful ending
+2. **Share a Supreme Nutella Roll** — because dessert is better when shared
+3. **Indulge in the Nutella Lava Cake** — it's theatre and dessert in one
+4. **End with a Crêpe** — because every great evening deserves a beautiful ending
 
 ## Making Your Date Night Perfect
 
@@ -514,10 +563,10 @@ Book your table now and create memories that last a lifetime.`,
 ## The Five Pillars of Luxury at L'Encore
 
 ### 1. Ingredient Excellence
-We source the world's finest ingredients: Madagascar vanilla, Bronte pistachios, Valrhona chocolate, and organic dairy. No compromises, no shortcuts.
+We source the finest ingredients. No compromises, no shortcuts.
 
 ### 2. Craftsmanship
-Every dish is handcrafted by skilled artisans who have trained in European patisseries. Our recipes are precise, our execution is flawless.
+Every dish is handcrafted by skilled artisans. Our recipes are precise, our execution is flawless.
 
 ### 3. Presentation
 We eat with our eyes first. Every dish at L'Encore is plated like a work of art, using premium crockery and thoughtful garnishing.
@@ -547,13 +596,12 @@ Experience luxury. Experience L'Encore.`,
 
 export const categories = [
   "All",
-  "French Toasts",
+  "French Toast",
   "NY Rolls",
-  "Crepes",
-  "Signature Specials",
+  "Crêpes",
+  "Cakes",
   "Coffee",
   "Cold Beverages",
-  "Seasonal Specials",
 ];
 
 export const translations = {
@@ -561,7 +609,7 @@ export const translations = {
     hero: {
       headline: "Experience Ahmedabad's Most Elegant Dessert Destination",
       subheading:
-        "French Toasts, NY Rolls & Crepes crafted for unforgettable evenings.",
+        "French Toasts, NY Rolls & Crêpes crafted for unforgettable evenings.",
       cta1: "Visit Now",
       cta2: "Explore Menu",
       cta3: "Order on WhatsApp",

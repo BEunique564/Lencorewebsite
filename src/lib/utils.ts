@@ -10,7 +10,8 @@ export const INSTAGRAM_URL = "https://www.instagram.com/lencore.ahm";
 export const GOOGLE_MAPS_URL = "https://maps.app.goo.gl/nSX7yNXqDAo8DhcN9";
 export const PHONE_NUMBER = "+91 98765 43210";
 export const EMAIL = "hello@lencore.in";
-export const ADDRESS = "Ornet Park 3, Sindhu Bhavan Road, Ahmedabad";
+export const ADDRESS = "Ornet Park, near Crush Coffee, Nr. Taj Hotel, Sindhu Bhavan Marg, Ahmedabad";
+export const TIMING = "6:00 PM – 12:30 AM";
 
 export function whatsappLink(message: string): string {
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;

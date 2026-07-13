@@ -113,7 +113,7 @@ export default function Footer() {
               Visit Us
             </h4>
             <p className="text-sm text-white/50 font-dm leading-relaxed mb-4">{ADDRESS}</p>
-            <p className="text-sm text-white/50 font-dm">Open Daily: 5 PM — 11 PM</p>
+            <p className="text-sm text-white/50 font-dm">Open Daily: 6 PM — 12:30 AM</p>
             <div className="mt-6 flex gap-3">
               <a
                 href={INSTAGRAM_URL}

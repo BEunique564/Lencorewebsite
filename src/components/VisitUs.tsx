@@ -79,7 +79,7 @@ export default function VisitUs() {
                 </div>
                 <div>
                   <h3 className="font-playfair text-lg font-semibold mb-1">Opening Hours</h3>
-                  <p className="text-sm text-foreground/60 font-dm">Open Daily: 5:00 PM — 11:00 PM</p>
+                  <p className="text-sm text-foreground/60 font-dm">Open Daily: 6:00 PM — 12:30 AM</p>
                   <p className="text-xs text-foreground/40 font-dm mt-1">
                     Extended hours on weekends & holidays
                   </p>

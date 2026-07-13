@@ -108,8 +108,6 @@ export default function ReservationModal({ isOpen, onClose }: Props) {
                     className="w-full px-4 py-3 rounded-xl border border-cream-dark focus:border-gold focus:outline-none text-sm font-dm"
                   >
                     <option value="">Select</option>
-                    <option>5:00 PM</option>
-                    <option>5:30 PM</option>
                     <option>6:00 PM</option>
                     <option>6:30 PM</option>
                     <option>7:00 PM</option>
@@ -119,6 +117,10 @@ export default function ReservationModal({ isOpen, onClose }: Props) {
                     <option>9:00 PM</option>
                     <option>9:30 PM</option>
                     <option>10:00 PM</option>
+                    <option>10:30 PM</option>
+                    <option>11:00 PM</option>
+                    <option>11:30 PM</option>
+                    <option>12:00 AM</option>
                   </select>
                 </div>
               </div>

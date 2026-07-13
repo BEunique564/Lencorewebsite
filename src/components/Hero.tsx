@@ -116,7 +116,7 @@ export default function Hero() {
           >
             <div className="flex items-center gap-2">
               <div className="w-2 h-2 bg-gold rounded-full animate-pulse" />
-              <span>Open Daily • 5 PM - 11 PM</span>
+              <span>Open Daily • 6 PM - 12:30 AM</span>
             </div>
             <div className="hidden sm:flex items-center gap-2">
               <span>★</span>

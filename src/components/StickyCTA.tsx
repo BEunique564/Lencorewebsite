@@ -18,7 +18,7 @@ export default function StickyCTA() {
           <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
             <div className="flex items-center gap-2 text-white/60 text-xs font-dm">
               <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
-              <span>Open Now • 5 PM - 11 PM</span>
+              <span>Open Now • 6 PM - 12:30 AM</span>
             </div>
             <div className="flex items-center gap-3">
               <a

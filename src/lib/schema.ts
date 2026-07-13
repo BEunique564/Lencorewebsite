@@ -3,16 +3,16 @@ export const restaurantSchema = {
   "@type": "Restaurant",
   name: "L'Encore",
   description:
-    "Ahmedabad's most elegant dessert destination. Premium French Toasts, NY Rolls & Crepes crafted for unforgettable evenings.",
+    "Ahmedabad's first kiosk serving Crêpes, NY Supreme Rolls & French Toast. Premium dessert destination on Sindhu Bhavan Road.",
   url: "https://lencore.in",
   telephone: "+919876543210",
   email: "hello@lencore.in",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "Ornet Park 3, Sindhu Bhavan Road",
+    streetAddress: "Ornet Park, near Crush Coffee, Nr. Taj Hotel, Sindhu Bhavan Marg",
     addressLocality: "Ahmedabad",
     addressRegion: "Gujarat",
-    postalCode: "380054",
+    postalCode: "380059",
     addressCountry: "IN",
   },
   geo: {
@@ -35,8 +35,8 @@ export const restaurantSchema = {
       "Saturday",
       "Sunday",
     ],
-    opens: "17:00",
-    closes: "23:00",
+    opens: "18:00",
+    closes: "00:30",
   },
   menu: "https://lencore.in/menu",
   acceptsReservations: "True",
@@ -141,7 +141,7 @@ export const faqSchema = {
       name: "What are L'Encore's opening hours?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "We're open daily in the evenings from 5:00 PM to 11:00 PM.",
+        text: "We're open daily from 6:00 PM to 12:30 AM.",
       },
     },
     {
