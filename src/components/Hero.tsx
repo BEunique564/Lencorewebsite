@@ -37,7 +37,7 @@ export default function Hero() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.9, delay: 0.4 }}
-              className="font-playfair text-[2.75rem] sm:text-5xl md:text-6xl lg:text-[3.75rem] font-bold leading-[1.1] tracking-tight mb-6"
+              className="font-playfair text-4xl sm:text-5xl md:text-[3.25rem] lg:text-[3.5rem] font-bold leading-[1.12] tracking-tight mb-6"
             >
               Ahmedabad&apos;s Most{" "}
               <span className="text-gradient">Elegant</span>{" "}
